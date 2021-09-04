@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="template1.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV DOYEN</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <header>
+                <section id="contact-details">
+                    <div class="header_1">
+                        <img id="image" height="250px" width="250px" />
+                    </div>
+                    <div class="header_2">
+                        <h1><span id="fname"></span></h1>
+                        <h3 id="jobTitle"></h3>
+                        <ul class="info_1">
+                            <li id="address1" class="address"></li>
+                        </ul>
+                        <ul class="info_2">
+                            <li id="phoneNo" class="phone"></li>
+                            <li id="email" class="email"><a href="mailto:your-email@gmail.com"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </header>
+            <div class="clear">&nbsp;</div>
+            <dl>
+                <dt>Profile:</dt>
+                <dd>
+                    <section id="profile" class="summary">
+
+                    </section>
+                </dd>
+            </dl>
+            <div class="clear">&nbsp;</div>
+            <dl>
+                <dt>Skills:</dt>
+                <dd>
+
+                    <section id="skills">
+                        <ul class="list1">
+                            <li id="Skill1"></li>
+                            <li id="Skill2"></li>
+                            <li id="Skill3"></li>
+                        </ul>
+                        <ul class="list1">
+                            <li id="Skill4"></li>
+                            <li id="Skill5"></li>
+                        </ul>
+                    </section>
+                </dd>
+            </dl>
+            <div class="clear">&nbsp;</div>
+
+            <dl>
+                <dt>Experience:</dt>
+
+                <dd>
+
+                    <section id="experience">
+
+                        <h2 id="prejob" class="top"></h2>
+                        <p id="coname" class="bus1"></p>
+                        <span id="timespan-from1" class="time"></span> &#45; <span id="timespan-to1"></span>
+
+                        <p id="prejob-desc"></p>
+                    </section>
+                </dd>
+            </dl>
+            <div class="clear">&nbsp;</div>
+            <dl>
+                <dt>Education:</dt>
+                <dd>
+
+                    <section id="education">
+
+                        <p id="uname" class="bus1"></p>
+
+                        <p id="colname"> </p>
+                        <p id="coladdress"></p>
+                        <p id="studied"></p>
+                        <span id="timespan-from2" class="time"></span> &#45; <span id="timespan-to2"></span>
+
+                        </p>
+
+                    </section>
+
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <button id="submitbtn" onclick="window.print()">Print</button>
+    <script>
+        const data = JSON.parse(sessionStorage.getItem("data"));
+        console.log(data);
+        document.getElementById("image").src = data[0];
+        document.getElementById("fname").innerText = data[1];
+        document.getElementById("jobTitle").innerText = data[2];
+        document.getElementById("address1").innerText = data[3];
+        document.getElementById("phoneNo").innerText = data[4];
+        document.getElementById("email").innerText = data[5];
+        document.getElementById("profile").innerText = data[6];
+        document.getElementById("Skill1").innerText = data[7];
+        document.getElementById("Skill2").innerText = data[8];
+        document.getElementById("Skill3").innerText = data[9];
+        document.getElementById("Skill4").innerText = data[10];
+        document.getElementById("Skill5").innerText = data[11];
+        document.getElementById("coname").innerText = data[12];
+        document.getElementById("timespan-from1").innerText = data[13];
+        document.getElementById("timespan-to1").innerText = data[14];
+        document.getElementById("prejob").innerText = data[15];
+        document.getElementById("prejob-desc").innerText = data[16];
+        document.getElementById("uname").innerText = data[17];
+        document.getElementById("colname").innerText = data[18];
+        document.getElementById("coladdress").innerText = data[19];
+        document.getElementById("studied").innerText = data[20];
+        document.getElementById("timespan-from2").innerText = data[21];
+        document.getElementById("timespan-to2").innerText = data[22];
+    </script>
+</body>
+
+</html>

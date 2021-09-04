@@ -1,0 +1,7 @@
+
+   
+    @media print{
+        body *:not(.container):not(.container *){
+            visibility: hidden;
+        }
+    }

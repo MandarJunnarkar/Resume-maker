@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #7CDEDF;
+}
+html{
+    height: 100%;
+}
+
+.home h1{
+    position: relative;
+    font-size: 70px;
+    top: 3em;
+    left: 2em;
+    color: #FDE896;
+}
+
+.home h2{
+    position: relative;
+    font-size: 20px;
+    top: 11em;
+    left: 7.2em;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+    color: #EBFFFD;
+}
+
+.home h4{
+    position: relative;
+    font-size: 20px;
+    top: 10em;
+    left: 7.2em;
+    font-family: 'Kaisei Tokumin', serif;
+    color: rgb(65, 65, 65);
+}
+
+.home a{
+    position: relative;
+    top: 17em;
+    left: 9.5em;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    background-color: rgb(37, 37, 37);
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-family: Tahoma, sans-serif;
+    border: 1px solid none;
+    border-radius: 5px;
+}
+.home a:hover{
+    color: #FDE896;
+    background-color: rgb(65, 65, 65);
+}
+
+.home img{
+    position: absolute;
+    left: 40em;
+    top: 2em;
+    width: 31em;
+    height: 35em;
+}
+
+/* create page */
+
+#nav-part{
+    width: 15%;
+    height: 60px;
+    color: rgb(65, 65, 65);
+    background-color: #FDE896;
+}
+
+#navbar{
+    width: 15%;
+    height: 100vh;
+    background-color: #f0dd90;
+}
+
+#nav-part h1{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+#navbar ul{
+    position: relative;
+    list-style: none;
+}
+
+#navbar li{
+    padding-top: 2em;
+    padding-left: 2.5em;
+}
+
+#navbar a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-family: fantasy;
+    font-weight: 500;
+}
+#navbar .current{
+    color: #965252;
+}
+#navbar a:hover{
+    color: #965252;
+}
+
+/* action php */
+#form{
+    position: absolute;
+    top: 1em;
+    left: 15em;
+    font-family: cursive;
+    font-size: 16px;
+    color: #EBFFFD;
+    text-shadow: 0 0 3px #000000, 0 0 3px #070707;
+}
+
+#template-img{
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 20%;
+}
+
+#template-img img{
+    margin-right: 100px;
+    height: 470px;
+    width: 400px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#template-img img:hover{
+    box-shadow: 1px 1px 10px yellow;
+}
