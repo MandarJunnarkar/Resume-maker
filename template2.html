@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="template2.css">
     <meta charset="UTF-8">
@@ -7,160 +8,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV DOYEN</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1 id="fname" class="name"></h1>
-            
-            <div id="designation">
-            
-                <span id="jobTitle" class="title"></span>
-                <span class="organization" id="address1"></span>
-            
-            </div>
-            
-            <div class="contact">
-                <div class="email" id="phoneNo"></div>
-                <div class="email" id="email"></div>
-            </div>
-            
-        </header>
-        
-        <div class="content" role=main>
-        
-            <section id="objective">
-                <h2 class="title">Profile</h2>
-                <div class="description">
-                    <p id="profile"></p>			
-                </div> <!-- end description -->
+    <div id="wrapper">
+        <div class="container">
+            <section class="header">
+                <h2 id="fname" class="name"></h2>
+
+                <div id="designation">
+
+                    <h3 id="jobTitle" class="title"></h3>
+
+                </div>
+
+                <div class="contact">
+                    <span class="organization" id="address1"></span>
+                    <div class="email" id="phoneNo"></div>
+                    <div class="email" id="email"></div>
+                </div>
+
             </section>
-            
-            
-            <section id="Education">
-                <h2 class="title">Education</h2>
-                <div class="description">
-                    
-                    <table>
-                        <thead>
-                            <td id="uname"></td>
-                            <td id="colname"></td>
-                            <td id="coladdress"></td>
-                            <td id="studied"></td>
-                            <span id="timespan-from2"></span> &#45; <span id="timespan-to2"></span>
-                        </thead>
-                        				
-                        
-                    </table>
-                
-                
-                </div> <!-- end description -->
-            </section>
-                
-            <section id="projects">
-                <h2 class="title">Experience</h2>
-                <div class="description">
-                    
-                    <!-- Project 1 -->
-                    <section class="project">
-                        <h3 class="title" id="prejob"></h3>
-                        <div class="meta">
-                            <span class="field" id="coname"></span> <span class="date" id="timespan-from1"></span> &#45; <span class="field" id="timespan-to1"></span>
-                        </div>
-                        <p class="description" id="prejob-desc"></p>
-                    </section> <!-- end project description -->		
-                    
+
+            <div class="content" role=main>
+
+                <section id="objective">
+                    <h2 class="title">Professional Profile</h2>
+                    <hr>
+                    <div class="description">
+                        <p id="profile"></p>
                     </div> <!-- end description -->
-            </section>	
+                </section>
 
-            <dl>
-                <dt>Skills:</dt>
-                <dd>
 
-                    <section id="skills">
-                        <ul class="list1">
-                            <li id="Skill1"></li>
-                            <li id="Skill2"></li>
-                            <li id="Skill3"></li>
-                        </ul>
-                        <ul class="list1">
-                            <li id="Skill4"></li>
-                            <li id="Skill5"></li>
-                        </ul>
-                    </section>
-                </dd>
-            </dl>
-        
-    
-            <!-- Training/ seminars -->
-            
-            
-            
-            <!-- Scholistics Achievements -->
-            
-            
-            
-            <!-- Technical Skills -->
-            
-            
-            <!-- Extra-Curricular Activities -->
-            
-            
-            <!-- Personal Informations -->
-            
-            
-            <!-- References -->
-            
-            
-            
-            <!-- Declarations -->
-    
-        
-            <!-- signatory -->
-        
-        
-        
-        
-        </div> <!-- end main content -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                <section id="education">
+                    <h2 class="title">Education</h2>
+                    <hr>
+                    <div class="description">
+
+                        <h3 id="uname"></h3>
+                        <h4 id="colname"></h4>
+                        <p id="coladdress"></p>
+                        <p id="studied"></p>
+                        <span id="timespan-from2"></span> &#45; <span id="timespan-to2"></span>
+
+
+                        </table>
+
+
+                    </div> <!-- end description -->
+                </section>
+
+                <section id="projects">
+                    <h2 class="title">Experience</h2>
+                    <hr>
+                    <div class="description">
+
+                        <!-- Project 1 -->
+                        <section class="project">
+                            <h3 class="title" id="prejob"></h3>
+                            <div class="meta">
+                                <span class="field" id="coname"></span> <span class="date" id="timespan-from1"></span>
+                                &#45; <span class="field" id="timespan-to1"></span>
+                            </div>
+                            <p id="prejob-desc"></p>
+                        </section> <!-- end project description -->
+
+                    </div> <!-- end description -->
+                </section>
+
+                <section id="skills"></section>
+                <h2>Skills</h2>
+                <hr>
+                </section>
+                <section id="skill-list">
+                    <ul class="list1">
+                        <li id="Skill1"></li>
+                        <li id="Skill2"></li>
+                        <li id="Skill3"></li>
+                    </ul>
+                    <ul class="list2">
+                        <li id="Skill4"></li>
+                        <li id="Skill5"></li>
+                    </ul>
+                </section>
+
+
+                <!-- Training/ seminars -->
+
+
+
+                <!-- Scholistics Achievements -->
+
+
+
+                <!-- Technical Skills -->
+
+
+                <!-- Extra-Curricular Activities -->
+
+
+                <!-- Personal Informations -->
+
+
+                <!-- References -->
+
+
+
+                <!-- Declarations -->
+
+
+                <!-- signatory -->
+
+
+
+
+            </div> <!-- end main content -->
         </div> <!-- end container -->
-        <button id="submitbtn" onclick="window.print()">Print</button>
-        <script>
-            const data = JSON.parse(sessionStorage.getItem("data"));
-            console.log(data);
-            document.getElementById("fname").innerText = data[1];
-            document.getElementById("jobTitle").innerText = data[2];
-            document.getElementById("address1").innerText = data[3];
-            document.getElementById("phoneNo").innerText = data[4];
-            document.getElementById("email").innerText = data[5];
-            document.getElementById("profile").innerText = data[6];
-            document.getElementById("Skill1").innerText = data[7];
-            document.getElementById("Skill2").innerText = data[8];
-            document.getElementById("Skill3").innerText = data[9];
-            document.getElementById("Skill4").innerText = data[10];
-            document.getElementById("Skill5").innerText = data[11];
-            document.getElementById("coname").innerText = data[12];
-            document.getElementById("timespan-from1").innerText = data[13];
-            document.getElementById("timespan-to1").innerText = data[14];
-            document.getElementById("prejob").innerText = data[15];
-            document.getElementById("prejob-desc").innerText = data[16];
-            document.getElementById("uname").innerText = data[17];
-            document.getElementById("colname").innerText = data[18];
-            document.getElementById("coladdress").innerText = data[19];
-            document.getElementById("studied").innerText = data[20];
-            document.getElementById("timespan-from2").innerText = data[21];
-            document.getElementById("timespan-to2").innerText = data[22];
-        </script>
+    </div>
+    <button id="submitbtn" onclick="window.print()">Print</button>
+
+    <script>
+        const data = JSON.parse(sessionStorage.getItem("data"));
+        console.log(data);
+        document.getElementById("fname").innerText = data[1];
+        document.getElementById("jobTitle").innerText = data[2];
+        document.getElementById("address1").innerText = data[3];
+        document.getElementById("phoneNo").innerText = data[4];
+        document.getElementById("email").innerText = data[5];
+        document.getElementById("profile").innerText = data[6];
+        document.getElementById("Skill1").innerText = data[7];
+        document.getElementById("Skill2").innerText = data[8];
+        document.getElementById("Skill3").innerText = data[9];
+        document.getElementById("Skill4").innerText = data[10];
+        document.getElementById("Skill5").innerText = data[11];
+        document.getElementById("coname").innerText = data[12];
+        document.getElementById("timespan-from1").innerText = data[13];
+        document.getElementById("timespan-to1").innerText = data[14];
+        document.getElementById("prejob").innerText = data[15];
+        document.getElementById("prejob-desc").innerText = data[16];
+        document.getElementById("uname").innerText = data[17];
+        document.getElementById("colname").innerText = data[18];
+        document.getElementById("coladdress").innerText = data[19];
+        document.getElementById("studied").innerText = data[20];
+        document.getElementById("timespan-from2").innerText = data[21];
+        document.getElementById("timespan-to2").innerText = data[22];
+    </script>
 </body>
+
 </html>

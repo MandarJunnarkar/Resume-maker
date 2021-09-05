@@ -69,7 +69,6 @@ a:active {
     border: #fff solid 4px;
     background: url("../images/bg_img_dark_green.png"); 
     padding: 16px;
-    margin: 10px 0px 0px 0px;
 }
  
 #contact-details .header_2 {
@@ -84,7 +83,7 @@ a:active {
  
 #contact-details  h1    {
     margin: 0px 0px 0px 20px;
-    font-size: 52px;
+    font-size: 35px;
     font-weight: bold;
 }
  
@@ -248,7 +247,8 @@ abbr    {
 
 #submitbtn{
     position: relative;
-    left: 15em;
+    margin-left: 45%;
+    margin-bottom: 50px;
     width: 70px;
     height: 35px;
 }

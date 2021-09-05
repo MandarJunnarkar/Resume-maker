@@ -1,7 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #7CDEDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-   
+#wrapper{
+    margin-top: 50px;
+    height: 800px;
+    width: 700px;
+    background-color: whitesmoke;
+}
+
+.conatiner{
+
+}
+
+.header{
+    font-family: helvetica, garamond;
+    position: relative;
+    left: 218px;
+    height: 150px;
+    width: 252px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin: auto;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: rgb(25, 75, 83);
+}
+h3{
+    color: rgb(25, 75, 83);
+}
+p{
+    font-size: 18px;
+}
+
+.name{
+   flex: 0.1 auto;
+}
+
+#designation{
+    flex: 0.2 auto;
+}
+
+#objective{
+    font-family: helvetica, garamond;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#profile{
+    font-family: helvetica, garamond;
+    padding-top: 5px;
+    margin-left: auto;
+    width: 600px;
+    margin-right: auto;
+}
+
+#education{
+    font-family: helvetica, garamond;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    margin-left: 50px;
+    padding-top: 5px;
+}
+
+#projects{
+    font-family: helvetica, garamond;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills{
+    font-family: helvetica, garamond;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#skill-list{
+    font-family: helvetica, garamond;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.list1{   
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.list2{ 
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+#skills li {
+    background: url("../images/bullet_green.png") no-repeat;
+    background-position: 0px 2px;
+    padding: 0px 0px 0px 25px;
+}
+
+button{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
     @media print{
-        body *:not(.container):not(.container *){
+        body *:not(#wrapper):not(#wrapper *){
             visibility: hidden;
         }
     }

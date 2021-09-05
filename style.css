@@ -121,14 +121,14 @@ html{
     left: 15em;
     font-family: cursive;
     font-size: 16px;
-    color: #EBFFFD;
-    text-shadow: 0 0 3px #000000, 0 0 3px #070707;
+    color: #000000;
+    text-shadow: 1px 1px 3px whitesmoke;
 }
 
 #template-img{
     position: absolute;
     display: flex;
-    top: 30px;
+    top: 100px;
     left: 20%;
 }
 
@@ -141,4 +141,12 @@ html{
 
 #template-img img:hover{
     box-shadow: 1px 1px 10px yellow;
+}
+
+#select-template{
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    color: #FDE896;
+    text-shadow: 1px 1px 3px black;
 }
