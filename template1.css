@@ -1,7 +1,6 @@
 body {
     margin: 0px;
-    padding: 0px;
-    background: url("../images/bg_dark_green.png");  
+    padding: 0px; 
     background-color: #7CDEDF;
     font-size: 16px; 
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -67,7 +66,6 @@ a:active {
  
 #contact-details .header_1 img {
     border: #fff solid 4px;
-    background: url("../images/bg_img_dark_green.png"); 
     padding: 16px;
 }
  
@@ -107,31 +105,26 @@ a:active {
 }
  
 #contact-details li.address {
-    background: url("../images/home.png") no-repeat;
     background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.phone   {
-    background: url("../images/phone.png") no-repeat;
     background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.email   {
-    background: url("../images/mail.png") no-repeat;
     background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.site_url    {
-    background: url("../images/computer.png") no-repeat;
     background-position: 0px 2px;
     padding: 0px 0px 12px 40px;
 }
  
 #contact-details li.twitter {
-    background: url("../images/twitter_sm.png") no-repeat;
     background-position: 0px 0px;
     padding: 0px 0px 12px 40px;
 }
@@ -230,7 +223,6 @@ p.summary   {
 }
  
 #skills li {
-    background: url("../images/bullet_green.png") no-repeat;
     background-position: 0px 2px;
     padding: 0px 0px 0px 25px;
 }
